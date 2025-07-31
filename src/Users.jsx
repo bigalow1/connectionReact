@@ -12,7 +12,7 @@ function Users() {
         const fetchusers = async () => {
           setLoading(true);
           try {
-            const response = await fetch("https://blogbackend-cgj8.onrender.com/user");
+            const response = await fetch("http://localhost:3001/user");
             if (!response.ok) {
               throw new Error("Network response was not ok");
             }
