@@ -10,7 +10,7 @@ function App() {
     const fetchBlogs = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:3001/post");
+        const response = await fetch("http://https://blogbackend-cgj8.onrender.com/post");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
